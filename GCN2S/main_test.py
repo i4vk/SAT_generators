@@ -32,7 +32,7 @@ template_name = f'graphs/template_small_{args.data_name}.dat'
 train_name = f'graphs/train_small_{args.data_name}.dat'
 
 if args.recompute_template or not os.path.isfile(template_name):
-    graphs_train, nodes_par1s_train, nodes_par2s_train = load_graphs_lcg(data_dir=f'dataset/new_train_set/{args.data_name}/',
+    graphs_train, nodes_par1s_train, nodes_par2s_train = load_graphs_lcg(data_dir=f'dataset/{args.data_name}/',
                                                                          stats_dir='dataset/')
     save_graph_list(graphs_train,train_name, has_par=True,nodes_par1_list=nodes_par1s_train,nodes_par2_list=nodes_par2s_train)
     print('Train graphs saved!', len(graphs_train))
