@@ -28,4 +28,5 @@ pip install tensorboardX
 # References
 
 [1] Iván Garzón, Pablo Mesejo, and Jesús Giráldez-Cru. On the performance of deep generative models of realistic sat instances. In Proc. of the 25th Int. Conf. on Theory and Applications of Satisfiability Testing (SAT 2022).
+
 [2] Jiaxuan You, Haoze Wu, Clark W. Barrett, Raghuram Ramanujan, and Jure Leskovec. G2SAT: learning to generate SAT formulas. In Proc. of the Annual Conference on Neural Information Processing Systems (NeurIPS 2019), pages 10552–10563, 2019.
