@@ -33,7 +33,6 @@ def save_graph_list(G_list, fname, clean=False, has_par=False, nodes_par1_list=N
                 graphs_info.append([G.nodes(), G.edges(data=True), nodes_par1_list[i], nodes_par2_list[i]])
             else:
                 graphs_info.append([G.nodes(), G.edges(data=True)])
-        print("papaya1", flush=True)
         pickle.dump(graphs_info, f)
 
 def load_graph_list(fname, has_par=False):

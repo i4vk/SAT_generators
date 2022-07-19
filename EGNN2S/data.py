@@ -473,15 +473,10 @@ class graph_generator():
     def merge(self, node_pair):
         # node_pair: node_new, node
         # merge node
-        print(min(list(self.graph.neighbors(0))), self.graph.number_of_nodes())
-        if node_pair[0] == 284 or node_pair[1] == 284:
-            print(node_pair)
         self.data.edge_index[self.data.edge_index==node_pair[0]] = node_pair[1]
         node_pair = node_pair.cpu().numpy()
         if node_pair[0] < node_pair[1]:
             node_pair[0], node_pair[1] = node_pair[1], node_pair[0]
-        if node_pair[0] == 284 or node_pair[1] == 284:
-            print(list(self.graph.neighbors(0)))
         self.graph = nx.contracted_nodes(self.graph, node_pair[1], node_pair[0])
         self.node_par2s.remove(node_pair[0])
 

@@ -82,7 +82,7 @@ else:
 
 i = 0
 for gen in generator_list:
-    print(gen.par_split, min(list(gen.graph.neighbors(0))))
+    # print(gen.par_split, min(list(gen.graph.neighbors(0))))
     f = open(os.path.join(f'par_splits_{args.data_name}/', f"{i}.txt"), "w")
     f.write(str(gen.par_split))
     f.close()
